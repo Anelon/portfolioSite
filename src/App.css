@@ -1,0 +1,219 @@
+a {
+	color: black;
+}
+
+.valign-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+}
+
+.App {
+	text-align: center;
+	height: 100%;
+	background-color: gray;
+}
+.full {
+	height:100%;
+}
+
+.NavLinks {
+	float:right;
+	padding-left:10px;
+}
+.NavLink {
+	margin: 5px;
+	font-size:20pt;
+	color: gray;
+}
+.codeLinks {
+	padding:10px;
+	margin-bottom: 10px;
+	color: black;
+	background-color: red;
+	border:solid;
+	border-color: black;
+	border-width:1rem;
+}
+.codeLink {
+	color: white;
+}
+
+.title {
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 30pt;
+	float: left;
+}
+.App-logo2 {
+	animation: App-logo-spin infinite 20s linear reverse;
+	height: 30pt;
+	float: left;
+}
+
+.App-header {
+	background-color: #222;
+	color: white;
+}
+
+.App-title {
+	float: left;
+	padding-left: 10px; 
+	padding-right: 10px; 
+	margin:0;
+}
+
+.App-intro {
+	font-size: large;
+}
+
+@keyframes App-logo-spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+.Card {
+	padding:10px;
+	margin-bottom: 10px;
+	color: black;
+	background-color: #d73839;
+	border:solid;
+	border-color: black;
+	border-width:1vw;
+}
+.noCard {
+	padding:10px;
+	margin-bottom: 10px;
+	color: black;
+	background-color: #d73839;
+	border:solid;
+	border-color: black;
+	border-width:1vw;
+}
+.deadCard {
+	padding:10px;
+	margin-bottom: 10px;
+	color: black;
+	background-color: #d7383900;
+	border:solid;
+	border-color: black;
+	border-width:1vw;
+}
+.Card:hover {
+	color: darkgray;
+	border:solid;
+	border-width:1vw;
+	border-color: darkgray;
+}
+.CardImg {
+	max-height: 50vh;
+}
+.paper {
+	width: 90vw;
+	height: 90vh;
+	border: solid;
+	border-width: 5vw;
+	margin-left: 5vw;
+}
+.background {
+	background-color: gray;
+}
+.white {
+	color: gray;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
+}
+.scroll {
+	border: solid;
+	border-color: #fff;
+	border-width: 1vw;
+	margin: auto;
+	overflow-y: scroll;
+	position: relative;
+	height: 85vh;
+}
+.fullScroll {
+	margin: auto;
+	overflow-y: scroll;
+	position: relative;
+	height: 100%;
+}
+.fit {
+	width: 100%;
+}
+.desc {
+	margin: auto;
+	padding: 1rem;
+}
+.middle {
+	justify-content: center;
+}
+.center {
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.tabz {
+    margin: 0;
+    border: 2px solid black;
+    background: gray;
+    list-style-type: none;
+}
+
+.tab-list {
+	background-color: gray;
+	border-bottom: 2px solid black;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.tab-list-item {
+	background-color: gray;
+	display: inline-block;
+	list-style: none;
+	margin-bottom: -2px;
+	padding: 0.75rem;
+   border-style: solid;
+   border-width: 0px 1px 2px 1px;
+}
+
+.tab-list-active {
+	font-weight: bold;
+	background-color: gray;
+	border: solid;
+   border-bottom-color: gray;
+	border-width: 0px 1px 3px 1px;
+}
+.videoHold {
+	height:400px;
+}
+.video {
+	position: absolute;
+	left:50%;
+	transform: translate(-50%,0);
+}
+.code {
+	width: 100vw;
+	padding: 10px;
+}
+.holder {
+	padding-left:10px;
+	padding-right:10px;
+	overflow-y: scroll;
+	position: relative;
+	max-height: 130vh;
+}
+.imageDiv {
+	margin-top: 10px;
+	border-top: solid;
+}

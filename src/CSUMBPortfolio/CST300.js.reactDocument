@@ -1,0 +1,65 @@
+import React, { Component } from 'react';
+//import { Document, Page } from 'react-pdf'
+
+class CST300 extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			title: "CST 300",
+			classDesc: "This class is an extended orientation.  It also focuses on ethics and writing applications to prepare students for professional communications.  Students are encouraged do develop various skills early on that lend to success (time management, project management, goal setting/achieving, etc.)."
+			//vidsrc: this.props.src,
+		}
+	}
+	componentDidMount() {
+		this.props.handler(this.state.title);
+	}
+	render() {
+		//var name = this.state.title;
+		var desc = this.state.classDesc;
+		//var loading = <div className="center">Loading Industry Analysis...</div>
+		return (
+			<div className="fullScroll">
+				{/*<h1 className="text-center">{name}</h1>*/}
+				<p className="desc">{desc}</p>
+				<h2 className="text-center">Industy Analysis Paper</h2>
+				<div>
+					{/*<Document file="Projects/IndustryAnalysis.pdf" loading={loading}>
+						<div className="grid-x grid-padding-x">
+							<div className="medium-6 cell">
+								<Page pageNumber={1}/>
+							</div>
+							<div className="medium-6 cell">
+								<Page pageNumber={2}/>
+							</div>
+							<div className="medium-6 cell">
+								<Page pageNumber={3}/>
+							</div>
+							<div className="medium-6 cell">
+								<Page pageNumber={4}/>
+							</div>
+							<div className="medium-6 cell">
+								<Page pageNumber={5}/>
+							</div>
+							<div className="medium-6 cell">
+								<Page pageNumber={6}/>
+							</div>
+							<div className="medium-6 cell">
+								<Page pageNumber={7}/>
+							</div>
+							<div className="medium-6 cell">
+								<Page pageNumber={8}/>
+							</div>
+							<div className="medium-6 cell">
+								<Page pageNumber={9}/>
+							</div>
+						</div>
+					</Document>*/}
+				</div>
+				<h2 className="text-center">Right to Repair (Ethics Paper)</h2>
+				<iframe title="Ethics Paper" src="https://docs.google.com/document/d/e/2PACX-1vTPZvplFWv_Sm2uSu_6kS66VJZDJdryuONY-LBq1ePooFKCpPhsUJXscmEeeTqe9A6v6hg4zz2e3j04/pub?embedded=true"></iframe>
+			</div>
+		)
+	}
+}
+
+export default CST300;
